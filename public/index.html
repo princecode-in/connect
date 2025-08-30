@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Connect - Lets spread your wings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="userholder">
+    <p>Current Nickname: <b id="currentNickname"></b></p>
+    
+  <button class="settings-btn" id="settingsBtn">⚙️</button>
+  </div>
+  <div class="mainchatspace" id="chat-window"></div>
+  <div class="chat-bar" id="chatBar">
+    <button id="connect" type="button">Connect</button>
+    <input type="text" id="message-input" placeholder="Type your message..." />
+    <button id="send-btn" type="button">Enter</button>
+  </div>
+  <div class="mainuserbase" id="mainuserbase">
+    <div class="mainuserbase-inside">
+      <div class="userstart">
+      <h3>Welcome to Connect!</h3>
+      <button class="close-btn" id="closeuserbase">×</button>
+    </div>
+    <div class="maincontainer">
+      <p style="font-family: 'arial', 'calibri','poppins'; padding-bottom: 20px;">Enter your username to start chatting with strangers</p>
+      <input type="text" id="username" placeholder="Enter username" />
+      <button></button>
+    </div>
+    <div class="userbasefooter">
+      <button id="userinputbase">Start chatting</button>
+    </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
